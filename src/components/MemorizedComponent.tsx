@@ -1,5 +1,4 @@
-import {type} from 'os';
-import React, { memo, useState } from 'react';
+import { memo, useState } from 'react';
 
 type FizzProps = {
   isFizz: boolean
