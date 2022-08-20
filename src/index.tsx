@@ -8,7 +8,8 @@ import App from './App';
 // import Parent from './components/ContainerSample';
 // import Page from './components/ContextSample';
 // import Counter from './components/Counter';
-import Counter from './components/CounterWithReducer';
+// import Counter from './components/CounterWithReducer';
+import { Parent } from './components/MemorizedComponent';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -16,7 +17,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Counter initialCount={42}/>
+    <Parent />
   </React.StrictMode>
 );
 
