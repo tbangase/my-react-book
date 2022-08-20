@@ -7,7 +7,8 @@ import App from './App';
 // import Message from './components/Message';
 // import Parent from './components/ContainerSample';
 // import Page from './components/ContextSample';
-import Counter from './components/Counter';
+// import Counter from './components/Counter';
+import Counter from './components/CounterWithReducer';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
