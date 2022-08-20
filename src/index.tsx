@@ -9,7 +9,8 @@ import App from './App';
 // import Page from './components/ContextSample';
 // import Counter from './components/Counter';
 // import Counter from './components/CounterWithReducer';
-import { Parent } from './components/MemorizedComponent';
+// import { Parent } from './components/MemorizedComponent';
+import { Parent } from './components/MemorizedComponent2';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
