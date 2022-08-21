@@ -42,6 +42,9 @@ export const Clock = () => {
     }
   }, [])
   // this effect is called only when initial rendering this component
+  // * Later than React 18 with Restrict mode rendering twice
+  //   to detect unsafe Effect.
+  //   use useRef to guarantee to call only once.
 
   // Effect for getting local setting
   useLayoutEffect(() => {
@@ -54,6 +57,9 @@ export const Clock = () => {
     }
   }, [])
   // this effect is called only when initial rendering this component
+  // * Later than React 18 with Restrict mode rendering twice
+  //   to detect unsafe Effect.
+  //   use useRef to guarantee to call only once.
 
   // Effect for saving local setting when locale is changed
   useEffect(() => {
