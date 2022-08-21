@@ -10,7 +10,8 @@ import App from './App';
 // import Counter from './components/Counter';
 // import Counter from './components/CounterWithReducer';
 // import { Parent } from './components/MemorizedComponent';
-import { Parent } from './components/MemorizedComponent2';
+// import { Parent } from './components/MemorizedComponent2';
+import { UseMemoSample } from './components/MemorizedComponent3';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -18,7 +19,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Parent />
+    <UseMemoSample />
   </React.StrictMode>
 );
 
