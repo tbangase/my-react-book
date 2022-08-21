@@ -11,16 +11,17 @@ import App from './App';
 // import Counter from './components/CounterWithReducer';
 // import { Parent } from './components/MemorizedComponent';
 // import { Parent } from './components/MemorizedComponent2';
-import { UseMemoSample } from './components/MemorizedComponent3';
+// import { UseMemoSample } from './components/MemorizedComponent3';
+import {Clock} from './components/Clock';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
-    <UseMemoSample />
-  </React.StrictMode>
+  // <React.StrictMode>
+  <Clock />
+  // </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
