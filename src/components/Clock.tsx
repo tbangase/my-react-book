@@ -1,4 +1,4 @@
-import {useState, useEffect, useLayoutEffect} from "react";
+import {useState, useEffect, useLayoutEffect, useRef} from "react";
 
 const UPDATE_INTERVAL = 1000;
 const KEY_LOCALE = 'KEY_LOCALE'
@@ -28,6 +28,8 @@ export const Clock = () => {
   // is it possible to initialize state from localStorage?
   const [locale, setLocale] = useState(localStorage.getItem(KEY_LOCALE))
 
+  const mounted = useRef(false);
+
   // Effect for setting timer
   useEffect(() => {
     const timer = setInterval(() => {
@@ -48,6 +50,11 @@ export const Clock = () => {
 
   // Effect for getting local setting
   useLayoutEffect(() => {
+    if (mounted.current) {
+      return
+    }
+    mounted.current = true
+
     const savedLocale = localStorage.getItem(KEY_LOCALE)
     if (savedLocale) {
       let locale_enum = getLocaleFromString(savedLocale)
