@@ -12,7 +12,8 @@ import App from './App';
 // import { Parent } from './components/MemorizedComponent';
 // import { Parent } from './components/MemorizedComponent2';
 // import { UseMemoSample } from './components/MemorizedComponent3';
-import {Clock} from './components/Clock';
+// import {Clock} from './components/Clock';
+import {Parent} from './components/UseContextSample';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -20,7 +21,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Clock />
+    <Parent />
   </React.StrictMode>
 );
 
