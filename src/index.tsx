@@ -14,7 +14,8 @@ import App from './App';
 // import { UseMemoSample } from './components/MemorizedComponent3';
 // import {Clock} from './components/Clock';
 // import {Parent} from './components/UseContextSample';
-import {ImageUploader} from './components/ImageUploader';
+// import {ImageUploader} from './components/ImageUploader';
+import {Parent} from './components/UseImperativeSample';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -22,7 +23,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <ImageUploader />
+    <Parent />
   </React.StrictMode>
 );
 
